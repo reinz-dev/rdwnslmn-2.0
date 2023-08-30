@@ -28,7 +28,7 @@ import {
   useDisclosure,
   useToast
 } from '@chakra-ui/react'
-import { HamburgerIcon, EmailIcon } from '@chakra-ui/icons'
+import { EmailIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
@@ -132,7 +132,10 @@ const Navbar = props => {
         </Flex>
         <Modal isOpen={isOpen} onClose={() => onClose(false)} isCentered>
           <ModalOverlay />
-          <ModalContent>
+          <ModalContent
+            bg="rgba(255, 255, 255, 0.05)"
+            backdropFilter="blur(10px)"
+          >
             <ModalHeader fontSize="3xl">Contact me.</ModalHeader>
             <ModalCloseButton />
             <ModalBody pb={6}>

@@ -68,8 +68,8 @@ const Home = () => (
               href="/"
               mt={{ base: 4, md: 0 }}
               scroll={false}
-              colorScheme="facebook"
               fontSize="sm"
+              variant="ResumeButton"
             >
               Resume CV
             </Button>
@@ -78,9 +78,8 @@ const Home = () => (
               href="/"
               mt={{ base: 4, md: 0 }}
               scroll={false}
-              colorScheme="facebook"
               fontSize="sm"
-              variant="outline"
+              variant="ContactButton"
             >
               Contact Me
             </Button>

@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic'
 import NavBar from '../navbar'
 import { Box, Container } from '@chakra-ui/react'
 import Footer from '../footer'
-import ParticlesBg from "../particlesBg";
+import ParticlesBg from '../particlesBg'
 
 const Main = ({ children, router }) => {
   return (
