@@ -7,7 +7,8 @@ import {
   SimpleGrid,
   Button,
   IconButton,
-  chakra
+  chakra,
+  Avatar
 } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
@@ -26,23 +27,81 @@ const Home = () => (
     <Container align="center" maxW="container.md">
       <Box
         display={{ base: 'inline-block', md: 'inline-block' }}
-        alignItems="center"
+        align="center"
         mt={25}
       >
         <Box
-          flexShrink={0}
-          mt={{ base: 4, md: 10 }}
-          ml={{ md: 6 }}
-          textAlign="center"
+          mt={10}
+          overflow="hidden"
+          position="relative"
+          justify="center"
+          width="300px"
+          height="300px"
         >
-          <Box>
-            <ProfileImage
-              src="/images/avatar.svg"
-              alt="Profile image"
-              width="190"
-              height="180"
-            />
-          </Box>
+          <img
+            src="/images/Circle-1.svg"
+            alt="Image 1"
+            style={{
+              width: '204px',
+          height: '200px',
+              objectFit: 'cover',
+              position: 'absolute',
+              left: '50%',
+              top: '50%',
+              transform: 'translate(-50%, -50%)'
+            }}
+          />
+          <img
+            src="/images/Circle-2.svg"
+            alt="Image 2"
+            style={{
+              width: '220px',
+          height: '220px',
+              objectFit: 'cover',
+              position: 'absolute',
+              left: '50%',
+              top: '50%',
+              transform: 'translate(-50%, -50%)'
+            }}
+          />
+          <img
+            src="/images/Circle-3.svg"
+            alt="Image 3"
+            style={{
+              width: '240px',
+          height: '240px',
+              objectFit: 'cover',
+              position: 'absolute',
+              left: '50%',
+              top: '50%',
+              transform: 'translate(-50%, -50%)'
+            }}
+          />
+          <img
+            src="/images/Circle-4.svg"
+            alt="Image 3"
+            style={{
+              width: '270px',
+          height: '258px',
+              objectFit: 'cover',
+              position: 'absolute',
+              left: '50%',
+              top: '50%',
+              transform: 'translate(-50%, -50%)'
+            }}
+          />
+
+          <img
+            src="/images/avatar.svg"
+            alt="Profile image"
+            style={{
+              objectFit: 'cover',
+              position: 'absolute',
+              left: '50%',
+              top: '50%',
+              transform: 'translate(-50%, -50%)'
+            }}
+          />
         </Box>
         <Box>
           <Box color="gray.300" mt={5}>
@@ -62,11 +121,12 @@ const Home = () => (
               COST CONTROL
             </Text>
           </Box>
-          <Flex mt={10} gap={5}>
+          <Box mt={10}>
             <Button
               as={NextLink}
               href="/"
               mt={{ base: 4, md: 0 }}
+              mr={5}
               scroll={false}
               fontSize="sm"
               variant="FullButton"
@@ -83,7 +143,7 @@ const Home = () => (
             >
               Contact Me
             </Button>
-          </Flex>
+          </Box>
         </Box>
       </Box>
       <Section delay={0.1}>
