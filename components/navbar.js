@@ -152,7 +152,7 @@ const Navbar = props => {
             </ModalBody>
 
             <ModalFooter>
-              <Button colorScheme="blue" mr={3} mb={3} onClick={handleSave}>
+              <Button variant="FullButton" mr={3} mb={3} onClick={handleSave}>
                 Send
               </Button>
             </ModalFooter>

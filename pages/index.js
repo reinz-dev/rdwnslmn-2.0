@@ -69,7 +69,7 @@ const Home = () => (
               mt={{ base: 4, md: 0 }}
               scroll={false}
               fontSize="sm"
-              variant="ResumeButton"
+              variant="FullButton"
             >
               Resume CV
             </Button>
@@ -79,7 +79,7 @@ const Home = () => (
               mt={{ base: 4, md: 0 }}
               scroll={false}
               fontSize="sm"
-              variant="ContactButton"
+              variant="OutlineButton"
             >
               Contact Me
             </Button>
