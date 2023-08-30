@@ -40,13 +40,17 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       href={href}
       scroll={false}
       rounded={5}
-      w="50px"
+      w="60px"
       align="center"
       bg={active ? 'nvLinkColor' : undefined}
       color={active ? 'gray.900' : inactiveColor}
       target={target}
       style={{ textDecoration: 'none' }}
-      _hover={{ background: 'nvLinkColor', color: 'gray.900', textDecoration: 'line-through' }}
+      _hover={{
+        textDecoration: 'underline',
+        background: 'nvLinkColor',
+        color: 'gray.900'
+      }}
       {...props}
     >
       {children}
@@ -109,15 +113,13 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem pt={1} href="/works" path={path}>
+          <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem pt={1} href="/posts" path={path}>
+          <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
-          <LinkItem pt={1} href="/">
-            Uses
-          </LinkItem>
+          <LinkItem href="/">Uses</LinkItem>
         </Stack>
 
         <Box>
