@@ -39,7 +39,7 @@ const Home = () => (
             <ProfileImage
               src="/images/avatar.svg"
               alt="Profile image"
-              width="180"
+              width="190"
               height="180"
             />
           </Box>

@@ -5,12 +5,12 @@ import RdwnsLogo from './icons/RdwnsLogo'
 
 const LogoBox = styled.span`
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   display: inline-flex;
   align-items: center;
   height: 30px;
   line-height: 20px;
-  padding: 10px;
+  padding: 5px;
   gap: 0.3rem;
 
   > svg {
@@ -18,7 +18,7 @@ const LogoBox = styled.span`
   }
 
   &:hover > svg {
-    transform: scale(1.2);
+    transform: scale(1.5);
   }
 `
 

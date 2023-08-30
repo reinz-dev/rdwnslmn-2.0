@@ -40,13 +40,13 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       href={href}
       scroll={false}
       rounded={5}
-      w="60px"
-      alignItems="center"
-      bg={active ? 'grassBlueDark' : undefined}
+      w="50px"
+      align="center"
+      bg={active ? 'nvLinkColor' : undefined}
       color={active ? 'gray.900' : inactiveColor}
       target={target}
       style={{ textDecoration: 'none' }}
-      _hover={{ background: 'grassBlueDark', color: 'gray.900' }}
+      _hover={{ background: 'nvLinkColor', color: 'gray.900', textDecoration: 'line-through' }}
       {...props}
     >
       {children}
@@ -105,7 +105,7 @@ const Navbar = props => {
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
           width={{ base: 'full', md: 'auto' }}
-          alignItems="center"
+          align="center"
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
@@ -120,7 +120,7 @@ const Navbar = props => {
           </LinkItem>
         </Stack>
 
-        <Flex alignItems="center">
+        <Box>
           <IconButton
             icon={<EmailIcon />}
             background="transparent"
@@ -129,7 +129,7 @@ const Navbar = props => {
             onClick={onOpen}
           />
           <ThemeToggleButton />
-        </Flex>
+        </Box>
         <Modal isOpen={isOpen} onClose={() => onClose(false)} isCentered>
           <ModalOverlay />
           <ModalContent
