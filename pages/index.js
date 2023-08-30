@@ -43,7 +43,7 @@ const Home = () => (
             alt="Image 1"
             style={{
               width: '204px',
-          height: '200px',
+              height: '200px',
               objectFit: 'cover',
               position: 'absolute',
               left: '50%',
@@ -56,7 +56,7 @@ const Home = () => (
             alt="Image 2"
             style={{
               width: '220px',
-          height: '220px',
+              height: '220px',
               objectFit: 'cover',
               position: 'absolute',
               left: '50%',
@@ -69,7 +69,7 @@ const Home = () => (
             alt="Image 3"
             style={{
               width: '240px',
-          height: '240px',
+              height: '240px',
               objectFit: 'cover',
               position: 'absolute',
               left: '50%',
@@ -82,7 +82,7 @@ const Home = () => (
             alt="Image 3"
             style={{
               width: '270px',
-          height: '258px',
+              height: '259px',
               objectFit: 'cover',
               position: 'absolute',
               left: '50%',
