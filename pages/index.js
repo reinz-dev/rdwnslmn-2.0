@@ -68,7 +68,7 @@ const Home = () => (
               href="/"
               mt={{ base: 4, md: 0 }}
               scroll={false}
-              colorScheme="blue"
+              colorScheme="facebook"
               fontSize="sm"
             >
               Resume CV
@@ -78,7 +78,7 @@ const Home = () => (
               href="/"
               mt={{ base: 4, md: 0 }}
               scroll={false}
-              colorScheme="blue"
+              colorScheme="facebook"
               fontSize="sm"
               variant="outline"
             >
