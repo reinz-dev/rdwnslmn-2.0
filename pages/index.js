@@ -1,15 +1,15 @@
-import NextLink from 'next/link'
 import {
   Container,
+  Center,
   Box,
-  Flex,
   Text,
   SimpleGrid,
   Button,
   IconButton,
-  chakra,
-  Avatar
+  chakra
 } from '@chakra-ui/react'
+import NextLink from 'next/link'
+import { motion } from 'framer-motion'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
@@ -22,6 +22,7 @@ import { MdEmail } from 'react-icons/md'
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
+
 const Home = () => (
   <Layout>
     <Container align="center" maxW="container.md">
@@ -32,26 +33,23 @@ const Home = () => (
       >
         <Box
           mt={10}
-          overflow="hidden"
+
           position="relative"
-          justify="center"
           width="300px"
           height="300px"
         >
-          <img
-            src="/images/Circle-1.svg"
-            alt="Image 1"
-            style={{
-              width: '204px',
-              height: '200px',
-              objectFit: 'cover',
-              position: 'absolute',
-              left: '50%',
-              top: '50%',
-              transform: 'translate(-50%, -50%)'
-            }}
-          />
-          <img
+          <Center w="300px" h="300px">
+            <motion.img
+              src="/images/Circle-1.svg"
+              alt="Image 1"
+              style={{
+                width: '204px',
+                height: '200px'
+              }}
+              animate={{ rotate: 360 }}
+              transition={{ ease: 'linear', duration: 50, repeat: Infinity }}
+            />
+          <motion.img
             src="/images/Circle-2.svg"
             alt="Image 2"
             style={{
@@ -59,12 +57,12 @@ const Home = () => (
               height: '220px',
               objectFit: 'cover',
               position: 'absolute',
-              left: '50%',
-              top: '50%',
-              transform: 'translate(-50%, -50%)'
+   
             }}
-          />
-          <img
+            animate={{ rotate: -360 }}
+            transition={{ ease: 'linear', duration: 40, repeat: Infinity }}
+            />
+          <motion.img
             src="/images/Circle-3.svg"
             alt="Image 3"
             style={{
@@ -72,25 +70,25 @@ const Home = () => (
               height: '240px',
               objectFit: 'cover',
               position: 'absolute',
-              left: '50%',
-              top: '50%',
-              transform: 'translate(-50%, -50%)'
+
             }}
-          />
-          <img
+            animate={{ rotate: 360 }}
+            transition={{ ease: 'linear', duration: 20, repeat: Infinity }}
+            />
+          <motion.img
             src="/images/Circle-4.svg"
             alt="Image 3"
             style={{
-              width: '270px',
-              height: '259px',
+              width: '280px',
+              height: '268px',
               objectFit: 'cover',
               position: 'absolute',
-              left: '50%',
-              top: '50%',
-              transform: 'translate(-50%, -50%)'
-            }}
-          />
 
+            }}
+            animate={{ rotate: 360 }}
+            transition={{ ease: 'linear', duration: 20, repeat: Infinity }}
+            />
+            </Center>
           <img
             src="/images/avatar.svg"
             alt="Profile image"
