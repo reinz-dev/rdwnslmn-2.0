@@ -1,4 +1,4 @@
-import { Box, Text, Spinner } from '@chakra-ui/react';
+import { Box, Text, Spinner } from '@chakra-ui/react'
 
 const Preloader = () => {
   return (
@@ -8,10 +8,9 @@ const Preloader = () => {
       alignItems="center"
       height="100vh"
     >
-        <Text>RIDWAN SULAEMAN</Text>
-      <Spinner size="xl" color="blue.500" />
+      <Text fontSize={56}>Hello</Text>
     </Box>
-  );
-};
+  )
+}
 
-export default Preloader;
+export default Preloader
