@@ -1,9 +1,8 @@
-import { VisuallyHidden } from 'components/VisuallyHidden'
+import { VisuallyHidden } from './visually-hidden'
 import { useReducedMotion, useSpring } from 'framer-motion'
 import { memo, useEffect, useRef } from 'react'
-import { delay } from 'utils/delay'
-import { classes } from 'utils/style'
-import styles from './DecoderText.module.css'
+import { delay } from '../lib/delay'
+import { classes } from '../lib/style'
 
 // prettier-ignore
 const glyphs = [
@@ -58,7 +57,7 @@ export const DecoderText = memo(
 
       const renderOutput = () => {
         const characterMap = output.current.map(item => {
-          return `<span class="${styles[item.type]}">${item.value}</span>`
+          return `<span>${item.value}</span>`
         })
 
         containerInstance.innerHTML = characterMap.join('')
@@ -92,9 +91,9 @@ export const DecoderText = memo(
     }, [decoderSpring, reduceMotion, start, startDelay, text])
 
     return (
-      <span className={classes(styles.text, className)} {...rest}>
-        <VisuallyHidden className={styles.label}>{text}</VisuallyHidden>
-        <span aria-hidden className={styles.content} ref={container} />
+      <span {...rest}>
+        <VisuallyHidden>{text}</VisuallyHidden>
+        <span ref={container} />
       </span>
     )
   }

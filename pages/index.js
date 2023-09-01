@@ -13,9 +13,12 @@ import { motion } from 'framer-motion'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
+import { DecoderText } from '../components/decoder-text'
+
 import thumbYouTube from '../public/Blank.jpg'
 import thumbInkdrop from '../public/Blank.jpg'
 import Image from 'next/image'
+
 import { FaTelegramPlane, FaLinkedin, FaGithubSquare } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 
@@ -31,13 +34,7 @@ const Home = () => (
         align="center"
         mt={25}
       >
-        <Box
-          mt={10}
-
-          position="relative"
-          width="300px"
-          height="300px"
-        >
+        <Box mt={10} position="relative" width="300px" height="300px">
           <Center w="300px" h="300px">
             <motion.img
               src="/images/Circle-1.svg"
@@ -49,46 +46,43 @@ const Home = () => (
               animate={{ rotate: 360 }}
               transition={{ ease: 'linear', duration: 50, repeat: Infinity }}
             />
-          <motion.img
-            src="/images/Circle-2.svg"
-            alt="Image 2"
-            style={{
-              width: '220px',
-              height: '220px',
-              objectFit: 'cover',
-              position: 'absolute',
-   
-            }}
-            animate={{ rotate: -360 }}
-            transition={{ ease: 'linear', duration: 40, repeat: Infinity }}
+            <motion.img
+              src="/images/Circle-2.svg"
+              alt="Image 2"
+              style={{
+                width: '220px',
+                height: '220px',
+                objectFit: 'cover',
+                position: 'absolute'
+              }}
+              animate={{ rotate: -360 }}
+              transition={{ ease: 'linear', duration: 40, repeat: Infinity }}
             />
-          <motion.img
-            src="/images/Circle-3.svg"
-            alt="Image 3"
-            style={{
-              width: '240px',
-              height: '240px',
-              objectFit: 'cover',
-              position: 'absolute',
-
-            }}
-            animate={{ rotate: 360 }}
-            transition={{ ease: 'linear', duration: 20, repeat: Infinity }}
+            <motion.img
+              src="/images/Circle-3.svg"
+              alt="Image 3"
+              style={{
+                width: '240px',
+                height: '240px',
+                objectFit: 'cover',
+                position: 'absolute'
+              }}
+              animate={{ rotate: 360 }}
+              transition={{ ease: 'linear', duration: 20, repeat: Infinity }}
             />
-          <motion.img
-            src="/images/Circle-4.svg"
-            alt="Image 3"
-            style={{
-              width: '280px',
-              height: '268px',
-              objectFit: 'cover',
-              position: 'absolute',
-
-            }}
-            animate={{ rotate: 360 }}
-            transition={{ ease: 'linear', duration: 20, repeat: Infinity }}
+            <motion.img
+              src="/images/Circle-4.svg"
+              alt="Image 3"
+              style={{
+                width: '280px',
+                height: '268px',
+                objectFit: 'cover',
+                position: 'absolute'
+              }}
+              animate={{ rotate: 360 }}
+              transition={{ ease: 'linear', duration: 20, repeat: Infinity }}
             />
-            </Center>
+          </Center>
           <img
             src="/images/avatar.svg"
             alt="Profile image"
@@ -102,6 +96,7 @@ const Home = () => (
           />
         </Box>
         <Box>
+          <DecoderText text="hello world" />
           <Box color="gray.300" mt={5}>
             Hello, I&apos;m{' '}
           </Box>
