@@ -10,7 +10,7 @@ const Preloader = () => {
       height="100vh"
     >
       <Flex gap={5} align="center">
-        <Box w="20px" h="20px" bg="whitesmoke" rounded="full" mt={2}></Box>
+        <Box w="20px" h="20px" bg="whitesmoke" rounded="full"></Box>
         <Text fontSize={56} align="center">
           hello
         </Text>

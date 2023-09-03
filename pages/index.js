@@ -42,7 +42,7 @@ const Home = () => (
               style={{
                 width: '204px',
                 height: '200px'
-              }}
+             }}
               animate={{ rotate: 360 }}
               transition={{ ease: 'linear', duration: 50, repeat: Infinity }}
             />

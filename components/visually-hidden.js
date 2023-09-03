@@ -1,5 +1,4 @@
 import { forwardRef } from 'react'
-import styles from '../lib/Styles/VisuallyHidden.module.css'
 
 export const VisuallyHidden = forwardRef(
   (
@@ -15,10 +14,10 @@ export const VisuallyHidden = forwardRef(
   ) => {
     return (
       <Component
-        className={classes(styles.hidden, className)}
         data-hidden={!visible && !showOnFocus}
         data-show-on-focus={showOnFocus}
         ref={ref}
+        style={{ position: 'absolute' }}
         {...rest}
       >
         {children}
