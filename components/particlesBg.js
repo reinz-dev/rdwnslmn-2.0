@@ -43,10 +43,10 @@ const ParticlesBg = () => {
         },
         particles: {
           color: {
-            value: '#0C1924'
+            value: '#242731'
           },
           links: {
-            color: '#0C1924',
+            color: '#242731',
             distance: 150,
             enable: true,
             opacity: 0.5,

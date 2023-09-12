@@ -32,7 +32,8 @@ const Home = () => (
       <Box
         display={{ base: 'inline-block', md: 'inline-block' }}
         align="center"
-        mt={25}
+        mt={75}
+        h="100vh"
       >
         <Box mt={10} position="relative" width="300px" height="300px">
           <Center w="300px" h="300px">
